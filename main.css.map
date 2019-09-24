@@ -1,0 +1,13 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,IAAI,CAAC;EACH,OAAO,EAAE,CAAC;EACV,MAAM,EAAE,CAAC;CACV;;AAED,AAAA,CAAC,CAAC;EACA,MAAM,EAAE,CAAC;CACV",
+    "sources": [
+        "main.scss",
+        "styles/_header.scss",
+        "styles/_featured.scss",
+        "styles/_other-stories.scss",
+        "styles/_opinion.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
