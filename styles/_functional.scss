@@ -1,0 +1,13 @@
+@import './colors';
+
+.section-title {
+  margin-top: 1rem;
+  color: $grey-light;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.hover-color-red:hover {
+  color: red !important;
+  text-decoration: none !important;
+}

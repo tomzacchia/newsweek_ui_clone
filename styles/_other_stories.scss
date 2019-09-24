@@ -1,36 +1,16 @@
-body {
-  padding: 0;
-  margin: 0;
-  font-family: "Roboto Condensed", sans-serif;
-}
+@import './colors';
 
-p {
-  margin: 0;
-}
-
-.section-title {
-  margin-top: 1rem;
-  color: #a1a1a1;
-  text-transform: uppercase;
-  font-size: 16px;
-}
-
-.hover-color-red:hover {
-  color: red !important;
-  text-decoration: none !important;
-}
-
+// main article
 .article-main {
-  margin-top: 1rem;
+  margin-top: 1rem;  
   padding-bottom: 1rem;
   position: relative;
-  border-bottom: solid thin #a1a1a1;
+  border-bottom: solid thin $grey-light;
 }
 
 .article-main__img-container {
   position: relative;
 }
-
 .article-main__img {
   width: 100%;
   height: auto;
@@ -43,22 +23,21 @@ p {
   left: 0;
   text-transform: uppercase;
   font-weight: bold;
-  color: #f72210;
-  background-color: #e7e7ea;
+  color: $main-light;
+  background-color: $grey-light-2;
 }
 
 .article-main__title {
   margin-top: 1rem;
   font-weight: bold;
-  font-family: "Roboto Condensed",sans-serif;
+  font-family: "Roboto Condensed",sans-serif;  
   font-size: 22px;
   line-height: 24px;
-}
 
-.article-main__title:hover {
-  -webkit-text-decoration: underline #f72210;
-          text-decoration: underline #f72210;
-  cursor: pointer;
+  &:hover {
+    text-decoration: underline $main;
+    cursor: pointer;
+  }
 }
 
 .article-main__description {
@@ -68,6 +47,7 @@ p {
   line-height: 18px;
 }
 
+// Culture articles
 .section-title__culture {
   padding-left: 1rem;
 }
@@ -104,19 +84,20 @@ p {
 .culture-article__button {
   margin-left: 1rem;
   background-color: #c4cbcc;
-  color: #1c1c1c;
+  color: rgb(28, 28, 28);
   font-size: 12px;
+
+  &:hover {
+    background-color: rgb(28, 28, 28);
+    color: #c4cbcc;
+  }
 }
 
-.culture-article__button:hover {
-  background-color: #1c1c1c;
-  color: #c4cbcc;
-}
-
+// More stories
 .more-stories-container {
   padding: 1rem 0;
   margin-top: 1rem;
-  border-top: solid thin #a1a1a1;
+  border-top: solid thin $grey-light;
 }
 
 .more-stories__img {
@@ -129,12 +110,10 @@ p {
   line-height: 20px;
   font-weight: bold;
   font-family: "Roboto Condensed",sans-serif;
-}
-
-.more-stories__title:hover {
-  -webkit-text-decoration: underline #f72210;
-          text-decoration: underline #f72210;
-  cursor: pointer;
+  &:hover {
+    text-decoration: underline $main;
+    cursor: pointer;
+  }
 }
 
 .more-stories__description {
@@ -142,33 +121,3 @@ p {
   line-height: 20px;
   font-family: Arial,Helvetica,sans-serif;
 }
-
-.opinion-container {
-  margin-bottom: 1rem;
-}
-
-.opinion__description {
-  font-size: 17px;
-  line-height: 21px;
-  font-weight: bold;
-}
-
-.opinion__author {
-  font-size: 17px;
-  line-height: 21px;
-  color: #666666;
-}
-
-.latest__img {
-  width: 100%;
-  height: auto;
-}
-
-.latest__title {
-  font-size: 17px;
-  line-height: 21px;
-  font-weight: bold;
-  text-decoration: none;
-  color: black;
-}
-/*# sourceMappingURL=main.css.map */

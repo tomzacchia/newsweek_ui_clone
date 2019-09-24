@@ -1,6 +1,7 @@
 body {
   padding: 0;
   margin: 0;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 p {
@@ -13,5 +14,5 @@ p {
 
 @import './styles/header';
 @import './styles/featured';
-@import './styles/other-stories';
+@import './styles/other_stories';
 @import './styles/opinion';

@@ -1,0 +1,32 @@
+@import './colors';
+
+// opinion
+.opinion-container {
+  margin-bottom: 1rem;
+}
+
+.opinion__description {
+  font-size: 17px;
+  line-height: 21px;
+  font-weight: bold;
+}
+
+.opinion__author {
+  font-size: 17px;
+  line-height: 21px;
+  color: $grey-dark;
+}
+
+// latest
+.latest__img {
+  width: 100%;
+  height: auto;
+}
+
+.latest__title {
+  font-size: 17px;
+  line-height: 21px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
