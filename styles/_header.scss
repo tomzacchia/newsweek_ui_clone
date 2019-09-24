@@ -1,0 +1,38 @@
+@import './colors';
+@import './mixins';
+
+.header {
+  height: 3rem;
+  background-color: $main;
+}
+
+.header .row {
+  height: 100%;
+  align-items: center;
+}
+
+.header__date {
+  color: white;
+}
+
+.header__img {
+  height: 2rem;
+  width: auto;
+}
+
+@include breakpoint(md) {
+  .header {
+    height: 3rem;
+  }
+  .header__img {
+    height: 2rem;
+    width: auto;
+  }
+}
+
+@include breakpoint(lg) {
+  .header .row {
+    padding-bottom: 1rem;
+    align-items: flex-end;
+  }
+}

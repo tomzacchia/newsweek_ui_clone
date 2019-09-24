@@ -11,216 +11,183 @@
 </head>
 <body>
 
-    <header class="container-fluid header">
-      <div class="row">
-        <div class="d-none d-lg-inline col-3 bg-primary"> date </div>
-        <div class="col-6 col-lg-6 bg-danger"> Nesweek </div>
-        <div class="col-6 col-lg-3 bg-info"> Sing In </div>
+  <header class="container-fluid header">
+    <div class="row">
+      <div class="d-none d-lg-inline col-3">
+        <p class="header__date"> Tue, Sep 24, 2019 </p>
       </div>
-    </header>
-
-    <nav class="container-fluid d-none d-lg-inline bg-success navbar">
-      <div class="row">
-        <div class="navbar-element"> U.S </div>
-        <div class="navbar-element"> World </div>
-        <div class="navbar-element"> Business</div>
-        <div class="navbar-element"> Tech & Science</div>
-        <div class="navbar-element"> Culture </div>
-        <div class="navbar-element"> Newsgeek </div>
-        <div class="navbar-element"> Sports </div>
-        <div class="navbar-element"> Healthy </div>
-        <div class="navbar-element"> Opinion </div>
-        <div class="navbar-element"> Vantage </div>
+      <div class="col-6 col-lg-6 header__img-container">
+        <img class="header__img" src="./assets/logo.png" alt="Newsweek">
       </div>
-    </nav>
+      <div class="col-6 col-lg-3">
+        <a href="#"> Sign In </a>
+        <button> Subscribe </button>
+      </div>
+    </div>
+  </header>
 
-    <main class="container">
-      <div class="row">
-        <!-- feature stories -->
-        <section class="col-12 col-md-5 col-lg-3 order-md-first featured-container">
-          <h2 class="section-title"> Featured Stories </h2>
-          <!-- feature 1 -->
-          <div class="article-main">
-            <div class="article-main__img-container">
-              <img class="article-main__img" src="https://d.newsweek.com/en/full/1530042/macron-rouhani.jpg?w=466&h=311&q=90&f=39df16daf615bb368095d68e57dcc626" alt="macron">            
-              <p class="article-main__category"> Politics </p>
-            </div>
-            <h2 class="article-main__title"> 
-                Perry: Trump Will 'Be Stronger Than Garlic' in Response to Iran
-            </h2>
-            <p class="article-main__description">
-                The energy secretary said Iran "could pay a very dear price 
-                economically" but added that Trump is "not interested in going to war."
-            </p>            
-          </div>
-          <!-- feature 2 -->
-          <div class="article-main">
-            <div class="article-main__img-container">
-              <img class="article-main__img" src="https://d.newsweek.com/en/full/1530034/bernie-sanders-elizabeth-warren-wealth-tax.jpg?w=466&h=311&q=90&f=cf66b9a7485cf9aa014eaec0dcd2619d" alt="sanders">            
-              <p class="article-main__category"> Politics </p>
-            </div>
-            <h2 class="article-main__title"> 
-                How Bernie Sanders' Wealth Tax Compares to Elizabeth Warren's Plan
-            </h2>
-            <p class="article-main__description">
-                While Warren's wealth tax is designed to raise revenue for 
-                progressive priorities, Sanders' wealth tax is also designed 
-                to close the gap in the rate at which the average American 
-                household and billionaires accrue wealth.
-            </p>            
-          </div>
-          <!-- feature 3 -->
-          <div class="article-main">
-            <div class="article-main__img-container">
-              <img class="article-main__img" src="https://d.newsweek.com/en/full/1529629/dod-23sept19.jpg?w=466&h=311&q=90&f=a33d93a525895e84e37c3cbb69c6e2ec" alt="press room">            
-              <p class="article-main__category"> Politics </p>
-            </div>
-            <h2 class="article-main__title"> 
-                Pentagon's Silence on Afghanistan Slammed: The 'Zero O'Clock Follies'
-            </h2>
-            <p class="article-main__description">
-                The peace talks are collapsing and the violence still claims 
-                U.S. service members' lives, but it's been over a year since 
-                the Pentagon held a press briefing on America's longest war.
-            </p>            
-          </div>
-        </section>
+  <nav class="container-fluid d-none d-lg-inline-block bg-success navbar">
+    <div class="row">
+      <div class="navbar-element"> U.S </div>
+      <div class="navbar-element"> World </div>
+      <div class="navbar-element"> Business</div>
+      <div class="navbar-element"> Tech & Science</div>
+      <div class="navbar-element"> Culture </div>
+      <div class="navbar-element"> Newsgeek </div>
+      <div class="navbar-element"> Sports </div>
+      <div class="navbar-element"> Healthy </div>
+      <div class="navbar-element"> Opinion </div>
+      <div class="navbar-element"> Vantage </div>
+    </div>
+  </nav>
 
-        <!-- top story, culture & travel, more stories  -->
-        <section class="col-12 col-md-7 col-lg-5 order-first other-stories-container">
-          <div class="row">
-            <!-- Top Story -->
-            <div class="col-12 order-1">
-              <h2 class="section-title"> Top Story </h2>
-              <div class="article-main">
-                <div class="article-main__img-container">
-                  <img class="article-main__img" src="https://d.newsweek.com/en/full/1529797/donald-trump-ukraine-joe-biden-transcript.jpg?w=591&h=364&q=90&f=c35f8b87727b33cad09082cc04cf747e" alt="trump">            
-                  <p class="article-main__category"> Politics </p>
+  <main class="container-fluid">
+    <div class="row">
+      <!-- feature stories -->
+      <section class="col-12 col-md-5 col-lg-3 order-md-first featured-container">
+        <h2 class="section-title"> Featured Stories </h2>
+        <!-- feature 1 -->
+        <div class="article-main">
+          <div class="article-main__img-container">
+            <img class="article-main__img" src="https://d.newsweek.com/en/full/1530042/macron-rouhani.jpg?w=466&h=311&q=90&f=39df16daf615bb368095d68e57dcc626" alt="macron">            
+            <p class="article-main__category"> Politics </p>
+          </div>
+          <h2 class="article-main__title"> 
+              Perry: Trump Will 'Be Stronger Than Garlic' in Response to Iran
+          </h2>
+          <p class="article-main__description">
+              The energy secretary said Iran "could pay a very dear price 
+              economically" but added that Trump is "not interested in going to war."
+          </p>            
+        </div>
+        <!-- feature 2 -->
+        <div class="article-main">
+          <div class="article-main__img-container">
+            <img class="article-main__img" src="https://d.newsweek.com/en/full/1530034/bernie-sanders-elizabeth-warren-wealth-tax.jpg?w=466&h=311&q=90&f=cf66b9a7485cf9aa014eaec0dcd2619d" alt="sanders">            
+            <p class="article-main__category"> Politics </p>
+          </div>
+          <h2 class="article-main__title"> 
+              How Bernie Sanders' Wealth Tax Compares to Elizabeth Warren's Plan
+          </h2>
+          <p class="article-main__description">
+              While Warren's wealth tax is designed to raise revenue for 
+              progressive priorities, Sanders' wealth tax is also designed 
+              to close the gap in the rate at which the average American 
+              household and billionaires accrue wealth.
+          </p>            
+        </div>
+        <!-- feature 3 -->
+        <div class="article-main">
+          <div class="article-main__img-container">
+            <img class="article-main__img" src="https://d.newsweek.com/en/full/1529629/dod-23sept19.jpg?w=466&h=311&q=90&f=a33d93a525895e84e37c3cbb69c6e2ec" alt="press room">            
+            <p class="article-main__category"> Politics </p>
+          </div>
+          <h2 class="article-main__title"> 
+              Pentagon's Silence on Afghanistan Slammed: The 'Zero O'Clock Follies'
+          </h2>
+          <p class="article-main__description">
+              The peace talks are collapsing and the violence still claims 
+              U.S. service members' lives, but it's been over a year since 
+              the Pentagon held a press briefing on America's longest war.
+          </p>            
+        </div>
+      </section>
+
+      <!-- top story, culture & travel, more stories  -->
+      <section class="col-12 col-md-7 col-lg-5 order-first other-stories-container">
+        <div class="row">
+          <!-- Top Story -->
+          <div class="col-12 order-1">
+            <h2 class="section-title"> Top Story </h2>
+            <div class="article-main">
+              <div class="article-main__img-container">
+                <img class="article-main__img" src="https://d.newsweek.com/en/full/1529797/donald-trump-ukraine-joe-biden-transcript.jpg?w=591&h=364&q=90&f=c35f8b87727b33cad09082cc04cf747e" alt="trump">            
+                <p class="article-main__category"> Politics </p>
+              </div>
+              <h2 class="article-main__title"> 
+                Trump Says He Could 'Very Easily' Release Ukraine 
+                Call Transcript 
+              </h2>
+              <p class="article-main__description">
+                  The president has tried to paint the controversy as 
+                  a media-driven attack and denied any wrongdoing.
+              </p>            
+            </div>
+          </div>
+
+          <!-- culture & travel  -->
+          <div class="col-12 order-3 order-md-2 culture-container">
+            <h2 class="section-title section-title__culture"> culture & travel </h2>
+
+            <div class="container">
+              <div class="row">
+                <!-- culture article 1 -->
+                <div class="col-12 col-md-6 culture-article">
+                  <img class="culture-article__img" src="https://d.newsweek.com/en/full/1529962/kenny-popera.jpg?w=397&h=265&f=d5416cad63a911a78ccdb1215b62ad35" alt="man">
+                  <h2 class="culture-article__title">
+                    Uncharted Territory: A Queer Journey Through The Kenyan Bush
+                  </h2>
+                  <p class="culture-article__description">
+                    Kenny Porpora, author of 'The Autumn Balloon,' joins an 
+                    LGBT tour operator in Kenya, where homosexuality is 
+                    punishable by up to 14 years in prison.
+                  </p>
+                  <button class="culture-article__button"> Africa </button>                  
                 </div>
-                <h2 class="article-main__title"> 
-                  Trump Says He Could 'Very Easily' Release Ukraine 
-                  Call Transcript 
+                <!-- culture article 2 -->
+                <div class="col-12 col-md-6 culture-article">
+                  <img class="culture-article__img" src="https://d.newsweek.com/en/full/1395614/qatar-airways.jpg?w=397&h=265&f=8d33e195b3df100a0ffe76bc3a4d029a" alt="qatar">
+                  <h2 class="culture-article__title">
+                    The World's Best Airlines, Ranked
+                  </h2>
+                  <p class="culture-article__description">
+                    For best airline overall, Asian and Middle Eastern airlines triumphed.
+                  </p>
+                  <button class="culture-article__button"> Slideshow </button>                 
+                </div>
+                <!-- culture article 3 -->
+                <div class="col-12 col-md-6 culture-article">
+                  <img class="culture-article__img" src="https://d.newsweek.com/en/full/1528024/downton-abbey.png?w=397&h=265&f=401d1f02c84edc0e27ef96216064d5a3" alt="abbey">
+                  <h2 class="culture-article__title">
+                    Real-life Downton Abbey Available on Airbnb For Under $190 a Night
+                  </h2>
+                  <p class="culture-article__description">
+                    "Lord and Lady Carnarvon will welcome guests into their home on arrival, and after settling them into their bedroom, will ask the guests to join them for cocktails before dinner."
+                  </p>
+                  <button class="culture-article__button"> Downtown Abbey </button>                  
+                </div>
+                <!-- culture article 4 -->
+                <div class="col-12 col-md-6 culture-article">
+                  <img class="culture-article__img" src="https://d.newsweek.com/en/full/1529195/nobody-told-me.jpg?w=397&h=265&f=8b594eba054467cd8c19c823cbed0534" alt="drink">
+                  <h2 class="culture-article__title">
+                    9 Best Cocktail Bars in New York
+                  </h2>
+                  <p class="culture-article__description">
+                    The Big Apple cocktail scene has never been less pretentious—and more expansive—than it is right now.
+                  </p>
+                  <button class="culture-article__button"> Cocktail </button>                   
+                </div>
+              </div>                
+            </div>
+
+          </div>
+
+          <!-- More stories  -->
+          <div class="col-12 order-2 order-md-3">
+              <h2 class="section-title"> more stories </h2>
+
+              <!-- story 1 -->
+              <div class="more-stories-container">
+                <img src="https://d.newsweek.com/en/full/1529343/fe-scotus-01-banner.jpg?w=135&h=90&f=b007d12b69350d31e43b7e1b1b9254c4" alt="pride" class="more-stories__img">
+                <h2 class="more-stories__title">
+                  Three LGBTQ Cases Set to Test the Supreme Court's Conservative Principles
                 </h2>
-                <p class="article-main__description">
-                    The president has tried to paint the controversy as 
-                    a media-driven attack and denied any wrongdoing.
-                </p>            
+                <p class="more-stories__description">
+                  Three explosive cases are about to test whether conservative Supreme Court justices are seen to rule according to their professed legal principles—or their politics.
+                </p>
               </div>
-            </div>
-
-            <!-- culture & travel  -->
-            <div class="col-12 order-3 order-md-2 culture-container">
-              <h2 class="section-title section-title__culture"> culture & travel </h2>
-
-              <div class="container">
-                <div class="row">
-                  <!-- culture article 1 -->
-                  <div class="col-12 col-md-6 culture-article">
-                    <img class="culture-article__img" src="https://d.newsweek.com/en/full/1529962/kenny-popera.jpg?w=397&h=265&f=d5416cad63a911a78ccdb1215b62ad35" alt="man">
-                    <h2 class="culture-article__title">
-                      Uncharted Territory: A Queer Journey Through The Kenyan Bush
-                    </h2>
-                    <p class="culture-article__description">
-                      Kenny Porpora, author of 'The Autumn Balloon,' joins an 
-                      LGBT tour operator in Kenya, where homosexuality is 
-                      punishable by up to 14 years in prison.
-                    </p>
-                    <button class="culture-article__button"> Africa </button>                  
-                  </div>
-                  <!-- culture article 2 -->
-                  <div class="col-12 col-md-6 culture-article">
-                    <img class="culture-article__img" src="https://d.newsweek.com/en/full/1395614/qatar-airways.jpg?w=397&h=265&f=8d33e195b3df100a0ffe76bc3a4d029a" alt="qatar">
-                    <h2 class="culture-article__title">
-                      The World's Best Airlines, Ranked
-                    </h2>
-                    <p class="culture-article__description">
-                      For best airline overall, Asian and Middle Eastern airlines triumphed.
-                    </p>
-                    <button class="culture-article__button"> Slideshow </button>                 
-                  </div>
-                  <!-- culture article 3 -->
-                  <div class="col-12 col-md-6 culture-article">
-                    <img class="culture-article__img" src="https://d.newsweek.com/en/full/1528024/downton-abbey.png?w=397&h=265&f=401d1f02c84edc0e27ef96216064d5a3" alt="abbey">
-                    <h2 class="culture-article__title">
-                      Real-life Downton Abbey Available on Airbnb For Under $190 a Night
-                    </h2>
-                    <p class="culture-article__description">
-                      "Lord and Lady Carnarvon will welcome guests into their home on arrival, and after settling them into their bedroom, will ask the guests to join them for cocktails before dinner."
-                    </p>
-                    <button class="culture-article__button"> Downtown Abbey </button>                  
-                  </div>
-                  <!-- culture article 4 -->
-                  <div class="col-12 col-md-6 culture-article">
-                    <img class="culture-article__img" src="https://d.newsweek.com/en/full/1529195/nobody-told-me.jpg?w=397&h=265&f=8b594eba054467cd8c19c823cbed0534" alt="drink">
-                    <h2 class="culture-article__title">
-                      9 Best Cocktail Bars in New York
-                    </h2>
-                    <p class="culture-article__description">
-                      The Big Apple cocktail scene has never been less pretentious—and more expansive—than it is right now.
-                    </p>
-                    <button class="culture-article__button"> Cocktail </button>                   
-                  </div>
-                </div>                
-              </div>
-
-            </div>
-
-            <!-- More stories  -->
-            <div class="col-12 order-2 order-md-3">
-                <h2 class="section-title"> more stories </h2>
-
-                <!-- story 1 -->
-                <div class="more-stories-container">
-                  <img src="https://d.newsweek.com/en/full/1529343/fe-scotus-01-banner.jpg?w=135&h=90&f=b007d12b69350d31e43b7e1b1b9254c4" alt="pride" class="more-stories__img">
-                  <h2 class="more-stories__title">
-                    Three LGBTQ Cases Set to Test the Supreme Court's Conservative Principles
-                  </h2>
-                  <p class="more-stories__description">
-                    Three explosive cases are about to test whether conservative Supreme Court justices are seen to rule according to their professed legal principles—or their politics.
-                  </p>
-                </div>
-                <!-- story 2 -->
-                <div class="more-stories-container">
-                    <img src="https://d.newsweek.com/en/full/1529877/donald-trump-egypt-press-nyt-reporter-arrest.jpg?w=135&h=90&f=47336302d3ef09a5cdace79604526383" alt="more-trump" class="more-stories__img">
-                    <h2 class="more-stories__title">
-                      Trump Administration Ignored Threats to U.S. Journalists in Egypt: Report
-                    </h2>
-                    <p class="more-stories__description">
-                      The New York Times said it was forced to turn to Ireland to help one of its reporters escape imminent arrest in Egypt, because the Trump administration failed to act.
-                    </p>
-                </div>
-                <!-- story 3 -->
-                <div class="more-stories-container">
-                  <img src="https://d.newsweek.com/en/full/1529855/boris-johnson.jpg?w=135&h=90&f=bca9b38018308a13780b3febc2fc00c7" alt="boris" class="more-stories__img">
-                  <h2 class="more-stories__title">
-                    U.K. Supreme Court Declares Suspending Parliament Unlawful, Null and Void
-                  </h2>
-                  <p class="more-stories__description">
-                    Britain's highest court has ruled that prime minister Boris Johnson's prorogation of Parliament was unlawful.
-                  </p>
-                </div>
-                <!-- story 4 -->
-                <div class="more-stories-container">
-                    <img src="https://d.newsweek.com/en/full/1529794/greta-thunberg-united-nations-speech-new-york.jpg?w=135&h=90&f=36028a1d2b7cef8e6052bceb86db1ba7" alt="greta" class="more-stories__img">
-                    <h2 class="more-stories__title">
-                      Trump Mocks Greta Thunberg, Twitter Reacts: 'Horrible Evil World Leader'
-                    </h2>
-                    <p class="more-stories__description">
-                      The president tweeted a video of Greta Thunberg's emotional United Nations speech and made a sarcastic remark.
-                    </p>
-                </div>
-                <!-- story 5 -->
-                <div class="more-stories-container">
-                  <img src="https://d.newsweek.com/en/full/1529343/fe-scotus-01-banner.jpg?w=135&h=90&f=b007d12b69350d31e43b7e1b1b9254c4" alt="pride" class="more-stories__img">
-                  <h2 class="more-stories__title">
-                    Three LGBTQ Cases Set to Test the Supreme Court's Conservative Principles
-                  </h2>
-                  <p class="more-stories__description">
-                    Three explosive cases are about to test whether conservative Supreme Court justices are seen to rule according to their professed legal principles—or their politics.
-                  </p>
-                </div>
-                <!-- story 6 -->
-                <div class="more-stories-container">
+              <!-- story 2 -->
+              <div class="more-stories-container">
                   <img src="https://d.newsweek.com/en/full/1529877/donald-trump-egypt-press-nyt-reporter-arrest.jpg?w=135&h=90&f=47336302d3ef09a5cdace79604526383" alt="more-trump" class="more-stories__img">
                   <h2 class="more-stories__title">
                     Trump Administration Ignored Threats to U.S. Journalists in Egypt: Report
@@ -228,143 +195,213 @@
                   <p class="more-stories__description">
                     The New York Times said it was forced to turn to Ireland to help one of its reporters escape imminent arrest in Egypt, because the Trump administration failed to act.
                   </p>
-                </div>
-                <!-- story 7 -->
-                <div class="more-stories-container">
-                  <img src="https://d.newsweek.com/en/full/1529855/boris-johnson.jpg?w=135&h=90&f=bca9b38018308a13780b3febc2fc00c7" alt="boris" class="more-stories__img">
+              </div>
+              <!-- story 3 -->
+              <div class="more-stories-container">
+                <img src="https://d.newsweek.com/en/full/1529855/boris-johnson.jpg?w=135&h=90&f=bca9b38018308a13780b3febc2fc00c7" alt="boris" class="more-stories__img">
+                <h2 class="more-stories__title">
+                  U.K. Supreme Court Declares Suspending Parliament Unlawful, Null and Void
+                </h2>
+                <p class="more-stories__description">
+                  Britain's highest court has ruled that prime minister Boris Johnson's prorogation of Parliament was unlawful.
+                </p>
+              </div>
+              <!-- story 4 -->
+              <div class="more-stories-container">
+                  <img src="https://d.newsweek.com/en/full/1529794/greta-thunberg-united-nations-speech-new-york.jpg?w=135&h=90&f=36028a1d2b7cef8e6052bceb86db1ba7" alt="greta" class="more-stories__img">
                   <h2 class="more-stories__title">
-                    U.K. Supreme Court Declares Suspending Parliament Unlawful, Null and Void
+                    Trump Mocks Greta Thunberg, Twitter Reacts: 'Horrible Evil World Leader'
                   </h2>
                   <p class="more-stories__description">
-                    Britain's highest court has ruled that prime minister Boris Johnson's prorogation of Parliament was unlawful.
+                    The president tweeted a video of Greta Thunberg's emotional United Nations speech and made a sarcastic remark.
                   </p>
+              </div>
+              <!-- story 5 -->
+              <div class="more-stories-container">
+                <img src="https://d.newsweek.com/en/full/1529343/fe-scotus-01-banner.jpg?w=135&h=90&f=b007d12b69350d31e43b7e1b1b9254c4" alt="pride" class="more-stories__img">
+                <h2 class="more-stories__title">
+                  Three LGBTQ Cases Set to Test the Supreme Court's Conservative Principles
+                </h2>
+                <p class="more-stories__description">
+                  Three explosive cases are about to test whether conservative Supreme Court justices are seen to rule according to their professed legal principles—or their politics.
+                </p>
+              </div>
+              <!-- story 6 -->
+              <div class="more-stories-container">
+                <img src="https://d.newsweek.com/en/full/1529877/donald-trump-egypt-press-nyt-reporter-arrest.jpg?w=135&h=90&f=47336302d3ef09a5cdace79604526383" alt="more-trump" class="more-stories__img">
+                <h2 class="more-stories__title">
+                  Trump Administration Ignored Threats to U.S. Journalists in Egypt: Report
+                </h2>
+                <p class="more-stories__description">
+                  The New York Times said it was forced to turn to Ireland to help one of its reporters escape imminent arrest in Egypt, because the Trump administration failed to act.
+                </p>
+              </div>
+              <!-- story 7 -->
+              <div class="more-stories-container">
+                <img src="https://d.newsweek.com/en/full/1529855/boris-johnson.jpg?w=135&h=90&f=bca9b38018308a13780b3febc2fc00c7" alt="boris" class="more-stories__img">
+                <h2 class="more-stories__title">
+                  U.K. Supreme Court Declares Suspending Parliament Unlawful, Null and Void
+                </h2>
+                <p class="more-stories__description">
+                  Britain's highest court has ruled that prime minister Boris Johnson's prorogation of Parliament was unlawful.
+                </p>
+              </div>
+              <!-- story 8 -->
+              <div class="more-stories-container">
+                  <img src="https://d.newsweek.com/en/full/1529794/greta-thunberg-united-nations-speech-new-york.jpg?w=135&h=90&f=36028a1d2b7cef8e6052bceb86db1ba7" alt="greta" class="more-stories__img">
+                  <h2 class="more-stories__title">
+                    Trump Mocks Greta Thunberg, Twitter Reacts: 'Horrible Evil World Leader'
+                  </h2>
+                  <p class="more-stories__description">
+                    The president tweeted a video of Greta Thunberg's emotional United Nations speech and made a sarcastic remark.
+                  </p>
+              </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- opinion & latest news -->
+      <section class="col-12 col-lg-4 opinion-container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="section-title"> Opinion </h2>
+
+            <!-- Opinion 1 -->
+            <div class="container-fluid opinion-container">
+              <div class="row">
+                <div class="col-3">
+                  <img class="opinion__img" src="https://d.newsweek.com/en/full/97976/robert-reich.png?w=63&h=63&f=297351a03eaa549128026042394c9580" alt="someone's head">
                 </div>
-                <!-- story 8 -->
-                <div class="more-stories-container">
-                    <img src="https://d.newsweek.com/en/full/1529794/greta-thunberg-united-nations-speech-new-york.jpg?w=135&h=90&f=36028a1d2b7cef8e6052bceb86db1ba7" alt="greta" class="more-stories__img">
-                    <h2 class="more-stories__title">
-                      Trump Mocks Greta Thunberg, Twitter Reacts: 'Horrible Evil World Leader'
-                    </h2>
-                    <p class="more-stories__description">
-                      The president tweeted a video of Greta Thunberg's emotional United Nations speech and made a sarcastic remark.
-                    </p>
+                <div class="col-9">
+                  <a class="opinion__description  hover-color-red">
+                    GM Is Betraying the American Worker. And Trump Is Hanging Them Out to Dry
+                  </a>
+                  <p class="opinion__author"> BY ROBERT REICH </p>
                 </div>
+              </div>
+            </div>
+            <!-- Opinion 2 -->
+            <div class="container-fluid opinion-container">
+              <div class="row">
+                <div class="col-3">
+                  <img class="opinion__img" src="https://d.newsweek.com/en/full/1506994/gavin-newsom.png?w=63&h=63&f=5a69f34e1a9db84563ebdf2464f72721" alt="someone's head">
+                </div>
+                <div class="col-9">
+                  <a class="opinion__description  hover-color-red">
+                    California's Ambitious Climate Policies Are Fueling Our Economy—and Trump Won't Stop Us
+                  </a>
+                  <p class="opinion__author"> BY GAVIN NEWSOM </p>
+                </div>
+              </div>
+            </div>
+            <!-- Opinion 1 -->
+            <div class="container-fluid opinion-container">
+              <div class="row">
+                <div class="col-3">
+                  <img class="opinion__img" src="https://d.newsweek.com/en/full/1529682/nicholas-stern.png?w=63&h=63&f=255f6318ba77ad1718ed37c0f3012d7c" alt="someone's head">
+                </div>
+                <div class="col-9">
+                  <a class="opinion__description  hover-color-red">
+                    Meeting the Challenge of Climate Change Is Key to 21st-Century Urban Growth
+                  </a>
+                  <p class="opinion__author"> BY NICHOLAS STERN </p>
+                </div>
+              </div>
+            </div>
+            <!-- Opinion 1 -->
+            <div class="container-fluid opinion-container">
+              <div class="row">
+                <div class="col-3">
+                  <img class="opinion__img" src="https://d.newsweek.com/en/full/1507272/newt-gingrich-joe-desantis.png?w=63&h=63&f=1116a1a353a1b965077c9362ecb6fde4" alt="someone's head">
+                </div>
+                <div class="col-9">
+                  <a class="opinion__description  hover-color-red">
+                    The Only Winner Out of Nancy Pelosi's Drug Plan Will Be China
+                  </a>
+                  <p class="opinion__author"> BY NEWT GINGRICH AND JOE DESANTIS </p>
+                </div>
+              </div>
             </div>
           </div>
-        </section>
 
-        <!-- opinion & latest news -->
-        <section class="col-12 col-lg-4 opinion-container">
-          <div class="row">
-            <div class="col-12">
-              <h2 class="section-title"> Opinion </h2>
+          <div class="col-12">
+            <h2 class="section-title"> Latest News </h2>
 
-              <!-- Opinion 1 -->
-              <div class="container-fluid opinion-container">
-                <div class="row">
-                  <div class="col-3">
-                    <img class="opinion__img" src="https://d.newsweek.com/en/full/97976/robert-reich.png?w=63&h=63&f=297351a03eaa549128026042394c9580" alt="someone's head">
-                  </div>
-                  <div class="col-9">
-                    <a class="opinion__description  hover-color-red">
-                      GM Is Betraying the American Worker. And Trump Is Hanging Them Out to Dry
-                    </a>
-                    <p class="opinion__author"> BY ROBERT REICH </p>
-                  </div>
-                </div>
-              </div>
-              <!-- Opinion 2 -->
-              <div class="container-fluid opinion-container">
-                <div class="row">
-                  <div class="col-3">
-                    <img class="opinion__img" src="https://d.newsweek.com/en/full/1506994/gavin-newsom.png?w=63&h=63&f=5a69f34e1a9db84563ebdf2464f72721" alt="someone's head">
-                  </div>
-                  <div class="col-9">
-                    <a class="opinion__description  hover-color-red">
-                      California's Ambitious Climate Policies Are Fueling Our Economy—and Trump Won't Stop Us
-                    </a>
-                    <p class="opinion__author"> BY GAVIN NEWSOM </p>
-                  </div>
-                </div>
-              </div>
-              <!-- Opinion 1 -->
-              <div class="container-fluid opinion-container">
-                <div class="row">
-                  <div class="col-3">
-                    <img class="opinion__img" src="https://d.newsweek.com/en/full/1529682/nicholas-stern.png?w=63&h=63&f=255f6318ba77ad1718ed37c0f3012d7c" alt="someone's head">
-                  </div>
-                  <div class="col-9">
-                    <a class="opinion__description  hover-color-red">
-                      Meeting the Challenge of Climate Change Is Key to 21st-Century Urban Growth
-                    </a>
-                    <p class="opinion__author"> BY NICHOLAS STERN </p>
-                  </div>
-                </div>
-              </div>
-              <!-- Opinion 1 -->
-              <div class="container-fluid opinion-container">
-                <div class="row">
-                  <div class="col-3">
-                    <img class="opinion__img" src="https://d.newsweek.com/en/full/1507272/newt-gingrich-joe-desantis.png?w=63&h=63&f=1116a1a353a1b965077c9362ecb6fde4" alt="someone's head">
-                  </div>
-                  <div class="col-9">
-                    <a class="opinion__description  hover-color-red">
-                      The Only Winner Out of Nancy Pelosi's Drug Plan Will Be China
-                    </a>
-                    <p class="opinion__author"> BY NEWT GINGRICH AND JOE DESANTIS </p>
-                  </div>
-                </div>
-              </div>
+            <!-- latest news 1 -->
+            <div class="latest-container">
+              <img src="https://d.newsweek.com/en/full/1530066/11-year-old-boy-stole-family-car-go-live-man-he-met-snapchat.jpg?w=397&h=265&f=ca2eef88c1d792d0c50179538c6fb2cf" alt="boy" class="latest__img">
+              <a href="#" class="latest__title hover-color-red">
+                11-Year-Old Boy Stole Family Car to Go Live with a Man He Met on Snapchat
+              </a>                    
             </div>
-
-            <div class="col-12">
-              <h2 class="section-title"> Latest News </h2>
-
-              <!-- latest news 1 -->
-              <div class="container latest-container">
-                <div class="row">
-                  <div class="col-4">
-                    <img src="https://d.newsweek.com/en/full/1530066/11-year-old-boy-stole-family-car-go-live-man-he-met-snapchat.jpg?w=397&h=265&f=ca2eef88c1d792d0c50179538c6fb2cf" alt="boy" class="latest__img">
-                  </div>
-                  <div class="col-8">
-                    <a href="#" class="latest__title hover-color-red">
-                      11-Year-Old Boy Stole Family Car to Go Live with a Man He Met on Snapchat
-                    </a>
-                  </div>
-                </div>
-              </div>
+            <!-- latest news 2 -->
+            <div class="latest-container">
+              <img src="https://d.newsweek.com/en/full/1530061/wedding-cake-gay-marriahe.jpg?w=397&h=265&f=ec92ad9e50bf9a47761b5d9c9b049d98" alt="cake" class="latest__img">
+              <a href="#" class="latest__title hover-color-red">
+                NC Lawmaker Tells Marriage Equality Supporters 'Tell it to Satan
+              </a>                    
+            </div>
+            <!-- latest news 3 -->
+            <div class="latest-container">
+              <img src="https://d.newsweek.com/en/full/1530053/vice-president-pence-visits-new-york-city-police-department.jpg?w=397&h=265&f=07c6e5140b29b39b27d2682b206df92c" alt="boy" class="latest__img">
+              <a href="#" class="latest__title hover-color-red">
+                Did Mike Pence Just Register With the FEC to Take on 'Don the Con' in 2020?
+              </a>                    
+            </div>
+            <!-- latest news 4 -->
+            <div class="latest-container">
+              <img src="https://d.newsweek.com/en/full/1530030/president-putin-r-dmitry-peskov-c.jpg?w=397&h=265&f=0289c8a55031097254c400e896e37f37" alt="cake" class="latest__img">
+              <a href="#" class="latest__title hover-color-red">
+                Putin Spokesman Says Unlike in U.S., Protesters Don't get Shot in Russia
+              </a>                    
+            </div>
+            <!-- latest news 5 -->
+            <div class="latest-container">
+              <img src="https://d.newsweek.com/en/full/1527650/hannah-brown.jpg?w=397&h=265&f=3f222c4a5fdfe5822a7934cd596ec213" alt="boy" class="latest__img">
+              <a href="#" class="latest__title hover-color-red">
+                Hannah Brown Says Trust Is Hard After 'Bachelorette' Breakup
+              </a>                    
+            </div>
+            <!-- latest news 2 -->
+            <div class="latest-container">
+              <img src="https://d.newsweek.com/en/full/1530044/greta-thunberg-un-climate-action-summit.jpg?w=397&h=265&f=68132a55fe2c786dc3e835640e8d02d6" alt="cake" class="latest__img">
+              <a href="#" class="latest__title hover-color-red">
+                Greta Thunberg Trolls Trump By Changing Twitter Bio
+              </a>                    
             </div>
           </div>
-        </section>
-      </div>
-    </main>
+        </div>
+      </section>
+    </div>
+  </main>
 
-    <!-- In the Magazine -->
-    <section class="container in-magazine">
-      <div class="in-magazine-features"> Floating Image </div>
-      <div class="row">
-        <div class="d-none d-md-inline col-md-3 bg-primary">
-          emptiness
-        </div>
-        <div class="col-12 col-md-3 bg-secondary">
-          otherness
-        </div>
+  <!-- In the Magazine -->
+  <section class="container in-magazine">
+    <div class="in-magazine-features"> Floating Image </div>
+    <div class="row">
+      <div class="d-none d-md-inline col-md-3 bg-primary">
+        emptiness
       </div>
-    </section>
+      <div class="col-12 col-md-3 bg-secondary">
+        otherness
+      </div>
+    </div>
+  </section>
 
-    <!-- Editor's Picks -->
-    <section class="container editor-picks">
-      <div class="row">
-        <div class="col-12 col-md-6 col-lg-3 bg-warning">
-          test
-        </div>
-        <div class="col-12 col-md-6 col-lg-3 bg-success">
-          test-2
-        </div>
-        <div class="col-12 col-md-6 col-lg-3 bg-warning">
-          test
-        </div>
+  <!-- Editor's Picks -->
+  <section class="container editor-picks">
+    <div class="row">
+      <div class="col-12 col-md-6 col-lg-3 bg-warning">
+        test
       </div>
-    </section>
+      <div class="col-12 col-md-6 col-lg-3 bg-success">
+        test-2
+      </div>
+      <div class="col-12 col-md-6 col-lg-3 bg-warning">
+        test
+      </div>
+    </div>
+  </section>
+
 </body>
 </html>
