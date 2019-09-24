@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title> Newsweek </title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="main.css">
 </head>
@@ -36,16 +37,84 @@
     <main class="container">
       <div class="row">
         <!-- feature stories -->
-        <section class="col-12 col-md-5 col-lg-4 bg-light featured-container">
-          Featured Stories
+        <section class="col-12 col-md-5 col-lg-4 order-md-first featured-container">
+          <h2 class="section-title"> Featured Stories </h2>
+          <!-- feature 1 -->
+          <div class="article-main">
+            <div class="article-main__img-container">
+              <img class="article-main__img" src="https://d.newsweek.com/en/full/1530042/macron-rouhani.jpg?w=466&h=311&q=90&f=39df16daf615bb368095d68e57dcc626" alt="macron">            
+              <p class="article-main__category"> Politics </p>
+            </div>
+            <h2 class="article-main__title"> 
+                Perry: Trump Will 'Be Stronger Than Garlic' in Response to Iran
+            </h2>
+            <p class="article-main__description">
+                The energy secretary said Iran "could pay a very dear price 
+                economically" but added that Trump is "not interested in going to war."
+            </p>            
+          </div>
+          <!-- feature 2 -->
+          <div class="article-main">
+            <div class="article-main__img-container">
+              <img class="article-main__img" src="https://d.newsweek.com/en/full/1530034/bernie-sanders-elizabeth-warren-wealth-tax.jpg?w=466&h=311&q=90&f=cf66b9a7485cf9aa014eaec0dcd2619d" alt="sanders">            
+              <p class="article-main__category"> Politics </p>
+            </div>
+            <h2 class="article-main__title"> 
+                How Bernie Sanders' Wealth Tax Compares to Elizabeth Warren's Plan
+            </h2>
+            <p class="article-main__description">
+                While Warren's wealth tax is designed to raise revenue for 
+                progressive priorities, Sanders' wealth tax is also designed 
+                to close the gap in the rate at which the average American 
+                household and billionaires accrue wealth.
+            </p>            
+          </div>
+          <!-- feature 3 -->
+          <div class="article-main">
+            <div class="article-main__img-container">
+              <img class="article-main__img" src="https://d.newsweek.com/en/full/1529629/dod-23sept19.jpg?w=466&h=311&q=90&f=a33d93a525895e84e37c3cbb69c6e2ec" alt="press room">            
+              <p class="article-main__category"> Politics </p>
+            </div>
+            <h2 class="article-main__title"> 
+                Pentagon's Silence on Afghanistan Slammed: The 'Zero O'Clock Follies'
+            </h2>
+            <p class="article-main__description">
+                The peace talks are collapsing and the violence still claims 
+                U.S. service members' lives, but it's been over a year since 
+                the Pentagon held a press briefing on America's longest war.
+            </p>            
+          </div>
         </section>
 
         <!-- top story, culture & travel, more stories  -->
-        <section class="col-12 col-md-7 col-lg-5 bg-success other-stories-container">
+        <section class="col-12 col-md-7 col-lg-5 bg-success order-first other-stories-container">
           <div class="row">
-            <div class="col-12 bg-warning"> top story </div>
-            <div class="col-12 bg-danger"> culture & travel </div>
-            <div class="col-12 bg-success"> more stories </div>
+            <!-- Top Story -->
+            <div class="col-12">
+              <h2 class="section-title"> Top Story </h2>
+              <div class="article-main">
+                <div class="article-main__img-container">
+                  <img class="article-main__img" src="https://d.newsweek.com/en/full/1529797/donald-trump-ukraine-joe-biden-transcript.jpg?w=591&h=364&q=90&f=c35f8b87727b33cad09082cc04cf747e" alt="trump">            
+                  <p class="article-main__category"> Politics </p>
+                </div>
+                <h2 class="article-main__title"> 
+                  Trump Says He Could 'Very Easily' Release Ukraine 
+                  Call Transcript 
+                </h2>
+                <p class="article-main__description">
+                    The president has tried to paint the controversy as 
+                    a media-driven attack and denied any wrongdoing.
+                </p>            
+              </div>
+            </div>
+            <!-- culture & travel  -->
+            <div class="col-12 bg-danger">
+              <h2 class="section-title"> culture & travel </h2>
+            </div>
+            <!-- culture & travel  -->
+            <div class="col-12 bg-success">
+                <h2 class="section-title"> more stories </h2>
+              </div>
           </div>
         </section>
 

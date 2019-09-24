@@ -1,14 +1,7 @@
-body {
-  padding: 0;
-  margin: 0;
-}
-
-p {
-  margin: 0;
-}
+@import './colors';
 
 .section-title {
-  color: #a1a1a1;
+  color: $grey-light;
   text-transform: uppercase;
   font-size: 16px;
 }
@@ -21,7 +14,6 @@ p {
 .article-main__img-container {
   position: relative;
 }
-
 .article-main__img {
   width: 100%;
   height: auto;
@@ -34,13 +26,13 @@ p {
   left: 0;
   text-transform: uppercase;
   font-weight: bold;
-  color: #f72210;
-  background-color: #e7e7ea;
+  color: $main-light;
+  background-color: $grey-light-2;
 }
 
 .article-main__title {
   font-weight: bold;
-  font-family: "Roboto Condensed",sans-serif;
+  font-family: "Roboto Condensed",sans-serif;  
   font-size: 22px;
   line-height: 24px;
 }
@@ -51,4 +43,3 @@ p {
   font-size: 13px;
   line-height: 18px;
 }
-/*# sourceMappingURL=main.css.map */
