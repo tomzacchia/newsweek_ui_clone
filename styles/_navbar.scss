@@ -6,10 +6,11 @@
 }
 
 .navbar-element a {
-  padding: 0 0.5rem;
+  padding: 0 6px;
   border-right: solid thin $grey-light;
   font-weight: bold;
   font-size: 18px;
+  line-height: 20px;
   color: black;
   text-decoration: none;
   &:hover {

@@ -150,10 +150,11 @@ p {
 }
 
 .navbar-element a {
-  padding: 0 0.5rem;
+  padding: 0 6px;
   border-right: solid thin #a1a1a1;
   font-weight: bold;
   font-size: 18px;
+  line-height: 20px;
   color: black;
   text-decoration: none;
 }
@@ -363,5 +364,120 @@ p {
   font-weight: bold;
   text-decoration: none;
   color: black;
+}
+
+.footer {
+  margin-top: 1rem;
+}
+
+.logo-social-row {
+  padding: 1rem 0;
+  border-top: solid thin #a1a1a1;
+  border-bottom: solid thin #a1a1a1;
+}
+
+.footer-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer-logo img {
+  height: 2rem;
+  width: 14rem;
+}
+
+.footer-logo p {
+  margin: 1rem 0;
+  color: #666666;
+  font-size: 12px;
+}
+
+.footer-social {
+  font-size: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  color: #666666;
+}
+
+.footer-social i {
+  margin: 0 0.25rem;
+}
+
+@media (min-width: 768px) {
+  .footer-logo {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+  .footer-logo img {
+    width: auto;
+  }
+  .footer-logo p {
+    margin: 0 0 0 1rem;
+  }
+  .footer-social {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+
+.legal-languages-row {
+  margin-top: 1rem;
+}
+
+.legal-languages-row ul {
+  padding: 0;
+  list-style: none;
+}
+
+.legal-languages-row li {
+  padding-right: 1rem;
+  display: inline;
+  color: #a1a1a1;
+  font-size: 12px;
+}
+
+.languages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.languages p {
+  margin-right: 1rem;
+  color: #666666;
+}
+
+@media (min-width: 768px) {
+  .legal-languages-row ul:first-child {
+    max-width: 30rem;
+  }
+  .legal-languages-row li:first-child {
+    padding: 0 0.5rem 0 0;
+  }
+  .legal-languages-row li {
+    padding: 0 0.5rem;
+    border-right: solid thin #a1a1a1;
+  }
+  .legal-languages-row li:last-child {
+    border-right: 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */
