@@ -13,6 +13,12 @@ p {
 @import './styles/components';
 
 @import './styles/header';
+@import './styles/navbar';
+
+.main-articles-container {
+  padding-top: 2rem;
+}
+
 @import './styles/featured';
 @import './styles/other_stories';
 @import './styles/opinion';

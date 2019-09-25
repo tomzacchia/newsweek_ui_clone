@@ -1,0 +1,52 @@
+@import './colors';
+@import './mixins';
+
+.navbar {
+  display: none;  
+}
+
+.navbar-element a {
+  padding: 0 0.5rem;
+  border-right: solid thin $grey-light;
+  font-weight: bold;
+  font-size: 18px;
+  color: black;
+  text-decoration: none;
+  &:hover {
+    color: $main;
+  }
+}
+
+.navbar-search a {
+  border-right: none;
+}
+
+.navbar-search input {
+  width: 3.5rem;
+  border: 0;
+}
+
+.navbar-search .fa-search {
+  color: $grey-light;
+}
+
+.navbar-shape {
+  width: 5rem;
+  height: 0;
+  border-left: 19px solid transparent;
+  border-top: 14px solid red;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+@include breakpoint(lg) {
+  .navbar {
+    display: initial;
+    position: absolute;
+    top: 100px;
+    background-color: white;
+    border-bottom: solid thin $grey-light;
+  }
+}
+

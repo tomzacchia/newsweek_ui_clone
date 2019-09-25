@@ -7,10 +7,12 @@
   <title> Newsweek </title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/349cf0313a.js"></script>
   <link rel="stylesheet" href="main.css">
 </head>
 <body>
 
+  <!-- header -->
   <header class="container-fluid header">
     <div class="row">
       <div class="d-none d-lg-inline col-3">
@@ -19,29 +21,39 @@
       <div class="col-6 col-lg-6 header__img-container">
         <img class="header__img" src="./assets/logo.png" alt="Newsweek">
       </div>
-      <div class="col-6 col-lg-3">
+      <div class="col-6 col-lg-3 header-left-content">
         <a href="#"> Sign In </a>
-        <button> Subscribe </button>
+        <div class="header__button">
+          <button> Subscribe </button>
+          <i class="fas fa-chevron-right"></i>        
+        </div>
+        <i class="fas fa-bars"></i>
       </div>
     </div>
   </header>
 
-  <nav class="container-fluid d-none d-lg-inline-block bg-success navbar">
+  <!-- navbar -->
+  <nav class="container-fluid d-none d-lg-inline-block navbar">
     <div class="row">
-      <div class="navbar-element"> U.S </div>
-      <div class="navbar-element"> World </div>
-      <div class="navbar-element"> Business</div>
-      <div class="navbar-element"> Tech & Science</div>
-      <div class="navbar-element"> Culture </div>
-      <div class="navbar-element"> Newsgeek </div>
-      <div class="navbar-element"> Sports </div>
-      <div class="navbar-element"> Healthy </div>
-      <div class="navbar-element"> Opinion </div>
-      <div class="navbar-element"> Vantage </div>
+      <div class="navbar-element"> <a href="#"> U.S </a> </div>
+      <div class="navbar-element"> <a href="#"> World </a> </div>
+      <div class="navbar-element"> <a href="#"> Business </a> </div>
+      <div class="navbar-element"> <a href="#"> Tech & Science </a> </div>
+      <div class="navbar-element"> <a href="#"> Culture </a> </div>
+      <div class="navbar-element"> <a href="#"> Newsgeek </a> </div>
+      <div class="navbar-element"> <a href="#"> Sports </a> </div>
+      <div class="navbar-element"> <a href="#"> Health </a> </div>
+      <div class="navbar-element"> <a href="#"> Opinion </a> </div>
+      <div class="navbar-element navbar-search">
+        <a href="#"> Vantage </a>
+        <input type="text" name="search-box" id="search-box" class="search-box" placeholder="Search">
+        <i class="fas fa-search"></i>
+      </div>
+      <div class="navbar-shape"></div>
     </div>
   </nav>
 
-  <main class="container-fluid">
+  <main class="container-fluid main-articles-container">
     <div class="row">
       <!-- feature stories -->
       <section class="col-12 col-md-5 col-lg-3 order-md-first featured-container">
