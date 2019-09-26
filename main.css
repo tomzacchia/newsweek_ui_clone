@@ -57,6 +57,22 @@ p {
   }
 }
 
+.promotion .button {
+  margin-top: 1rem;
+}
+
+.languages p {
+  margin-right: 1rem;
+  color: #666;
+}
+
+.legal-languages-row li {
+  padding-right: 1rem;
+  display: inline;
+  color: #a1a1a1;
+  font-size: 12px;
+}
+
 .header {
   height: 3rem;
   background-color: #f72210;
@@ -441,7 +457,7 @@ p {
   height: auto;
 }
 
-.in-magazine-card>a {
+.in-magazine-card > a {
   font-weight: bold;
 }
 
@@ -495,9 +511,7 @@ p {
   color: #f72210;
 }
 
-.promotion .button {
-  margin-top: 1rem;
-}
+
 
 .promotion .button_with_chevron {
   display: inline;
@@ -751,12 +765,7 @@ p {
   list-style: none;
 }
 
-.legal-languages-row li {
-  padding-right: 1rem;
-  display: inline;
-  color: #a1a1a1;
-  font-size: 12px;
-}
+
 
 .languages {
   display: -webkit-box;
@@ -764,10 +773,7 @@ p {
   display: flex;
 }
 
-.languages p {
-  margin-right: 1rem;
-  color: #666;
-}
+
 
 @media (min-width: 768px) {
   .legal-languages-row ul:first-child {
