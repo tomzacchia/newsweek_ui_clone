@@ -52,7 +52,7 @@ p {
     position: absolute;
     right: 14px;
     top: 7px;
-    color: #F7220A;
+    color: #f7220a;
     font-size: 12px;
   }
 }
@@ -358,7 +358,7 @@ p {
 .opinion__author {
   font-size: 15px;
   line-height: 20px;
-  color: #666666;
+  color: #666;
 }
 
 .latest-container {
@@ -682,7 +682,7 @@ p {
 
 .footer-logo p {
   margin: 1rem 0;
-  color: #666666;
+  color: #666;
   font-size: 12px;
 }
 
@@ -697,7 +697,7 @@ p {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  color: #666666;
+  color: #666;
 }
 
 .footer-social i {
@@ -751,7 +751,7 @@ p {
 
 .languages p {
   margin-right: 1rem;
-  color: #666666;
+  color: #666;
 }
 
 @media (min-width: 768px) {
