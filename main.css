@@ -73,6 +73,16 @@ p {
   font-size: 12px;
 }
 
+.in-magazine-card > a {
+  font-weight: bold;
+}
+
+.footer-logo p {
+  margin: 1rem 0;
+  color: #666;
+  font-size: 12px;
+}
+
 .header {
   height: 3rem;
   background-color: #f72210;
@@ -457,9 +467,6 @@ p {
   height: auto;
 }
 
-.in-magazine-card > a {
-  font-weight: bold;
-}
 
 .in-magazine-card__category1 {
   padding: 0 1rem;
@@ -704,11 +711,6 @@ p {
   width: 14rem;
 }
 
-.footer-logo p {
-  margin: 1rem 0;
-  color: #666;
-  font-size: 12px;
-}
 
 .footer-social {
   font-size: 1.5rem;
@@ -770,17 +772,16 @@ p {
 }
 
 @media (min-width: 768px) {
+  .legal-languages-row li {
+    padding: 0 0.5rem;
+    border-right: solid thin #a1a1a1;
+  }  
   .legal-languages-row ul:first-child {
     max-width: 30rem;
   }
 
   .legal-languages-row li:first-child {
     padding: 0 0.5rem 0 0;
-  }
-
-  .legal-languages-row li {
-    padding: 0 0.5rem;
-    border-right: solid thin #a1a1a1;
   }
 
   .legal-languages-row li:last-child {
