@@ -1,7 +1,14 @@
 @import './colors';
 @import './mixins';
 
+
+.promotion {
+  padding-top: 2rem;
+  border-top: solid thin $grey-light;
+}
+
 .promotion-title {
+  margin-top: 2rem;
   font-weight: bold;
   font-size: 16px;
   line-height: 16px;
@@ -10,6 +17,26 @@
   color: $main;
 }
 
+.promotion .button {
+  margin-top: 1rem;
+}
+
+// subscribe button override
+.promotion .button_with_chevron {
+  display: inline;
+}
+
+.promotion .button_with_chevron .button {
+  padding: 0 1rem;
+}
+
+.promotion .button_with_chevron .responsive_icon {
+  right: 4px;
+  top: 19px;
+  color: white;
+}
+
+// subcription
 .subscription .content-container {
   padding: 1rem;
   padding-top: 18rem;
@@ -40,10 +67,6 @@
   font-size: 24px;
   line-height: 24px;
   font-weight: bold;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
 }
 
 .promotion .text-container p {
@@ -51,13 +74,9 @@
   line-height: 21px;
 }
 
-.subscription .button {
-  margin-top: 1rem;
-}
-
 @include breakpoint(md) {
   .subscription .content-container {
-    padding: 6rem 1rem;
+    padding: 4.5rem 1rem;
     padding-left: 18rem;
   }
   .content-container .img1 {
@@ -74,10 +93,76 @@
     padding-left: 1rem;
     align-items: flex-start;
   }
-  .promotion .text-container h2 {
+  .subscription .text-container h2 {
     text-align: left;
   }
-  .promotion .text-container p {
+  .subscription .text-container p {
     text-align: left;
+  }
+}
+
+@include breakpoint(lg) {
+  .subscription .content-container {
+    padding: 34px 1rem;
+    padding-left: 18rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .subscription .content-container {
+    padding: 69px 1rem;
+    padding-left: 18rem;
+  }
+}
+
+// newsletter
+.newsletter .text-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.newsletter .newsletter-img {
+  height: 11rem;
+  width: 100%;
+  background-image: url('https://d.newsweek.com/en/full/1525348/newsletter-promo-home-page.png?w=397&h=265&q=90&f=172a044c08b5e64f42dcb61b425487bf');
+  background-size: cover;
+  background-position: 0 50%;
+}
+
+.newsletter .text-divier {
+  text-align: center;
+}
+
+.newsletter .text-divier h2 {
+  margin-top: 1rem;
+}
+
+.newsletter .button_with_chevron .responsive_icon {
+  top: 4px !important;
+}
+
+@include breakpoint(md) {
+  .newsletter .text-container {
+    flex-direction: row;
+  }
+  .newsletter .newsletter-img {
+    height: 11rem;
+    width: 13rem;
+    background-position: 50% 50%;
+  }
+  .newsletter .text-divier {
+    padding-left: 1rem;
+    text-align: left;
+  }
+}
+
+@include breakpoint(lg) {
+  .newsletter .text-container {
+    background-position: -12% 0%;
+    background-size: contain;
+  }
+  .newsletter .newsletter-img {
+    height: 292px;
+    width: 33rem;
   }
 }

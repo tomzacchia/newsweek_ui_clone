@@ -211,6 +211,13 @@ p {
   }
 }
 
+@media (min-width: 1200px) {
+  .navbar-element a {
+    font-size: 22px;
+    line-height: 20px;
+  }
+}
+
 .main-articles-container {
   padding-top: 2rem;
 }
@@ -381,13 +388,125 @@ p {
   color: black;
 }
 
+.in-magazine {
+  position: relative;
+}
+
+.in-magazine-features__link {
+  background-color: #a1a1a1;
+  font-weight: bold;
+}
+
+.in-magazine-title {
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.in-magazine-title img {
+  width: 2rem;
+}
+
+.in-magazine-title p {
+  margin-left: 1rem;
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .in-magazine-title {
+    margin-bottom: 2rem;
+  }
+  .in-magazine-title img {
+    margin-left: 12rem;
+  }
+}
+
+.in-magazine-card {
+  margin-bottom: 2rem;
+}
+
+.in-magazine-card img {
+  margin-bottom: 1rem;
+  width: 100%;
+  height: auto;
+}
+
+.in-magazine-card a {
+  font-weight: bold;
+}
+
+.in-magazine-card__category1 {
+  padding: 0 1rem;
+  background-color: red;
+  color: white !important;
+  text-transform: uppercase;
+}
+
+.in-magazine-card__category2 {
+  padding: 0 1rem;
+  text-transform: uppercase;
+}
+
+.in-magazine-card__title {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .in-magazine-features {
+    width: 10rem;
+    position: absolute;
+    top: 5rem;
+  }
+  .in-magazine-card__category2 {
+    padding: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .in-magazine-features {
+    width: 11rem;
+    top: 5rem;
+  }
+}
+
+.promotion {
+  padding-top: 2rem;
+  border-top: solid thin #a1a1a1;
+}
+
 .promotion-title {
+  margin-top: 2rem;
   font-weight: bold;
   font-size: 16px;
   line-height: 16px;
   font-family: "Roboto Condensed", sans-serif;
   text-transform: uppercase;
   color: #f72210;
+}
+
+.promotion .button {
+  margin-top: 1rem;
+}
+
+.promotion .button_with_chevron {
+  display: inline;
+}
+
+.promotion .button_with_chevron .button {
+  padding: 0 1rem;
+}
+
+.promotion .button_with_chevron .responsive_icon {
+  right: 4px;
+  top: 19px;
+  color: white;
 }
 
 .subscription .content-container {
@@ -427,17 +546,6 @@ p {
   font-size: 24px;
   line-height: 24px;
   font-weight: bold;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
 }
 
 .promotion .text-container p {
@@ -445,13 +553,9 @@ p {
   line-height: 21px;
 }
 
-.subscription .button {
-  margin-top: 1rem;
-}
-
 @media (min-width: 768px) {
   .subscription .content-container {
-    padding: 6rem 1rem;
+    padding: 4.5rem 1rem;
     padding-left: 18rem;
   }
   .content-container .img1 {
@@ -470,11 +574,84 @@ p {
         -ms-flex-align: start;
             align-items: flex-start;
   }
-  .promotion .text-container h2 {
+  .subscription .text-container h2 {
     text-align: left;
   }
-  .promotion .text-container p {
+  .subscription .text-container p {
     text-align: left;
+  }
+}
+
+@media (min-width: 992px) {
+  .subscription .content-container {
+    padding: 34px 1rem;
+    padding-left: 18rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .subscription .content-container {
+    padding: 69px 1rem;
+    padding-left: 18rem;
+  }
+}
+
+.newsletter .text-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.newsletter .newsletter-img {
+  height: 11rem;
+  width: 100%;
+  background-image: url("https://d.newsweek.com/en/full/1525348/newsletter-promo-home-page.png?w=397&h=265&q=90&f=172a044c08b5e64f42dcb61b425487bf");
+  background-size: cover;
+  background-position: 0 50%;
+}
+
+.newsletter .text-divier {
+  text-align: center;
+}
+
+.newsletter .text-divier h2 {
+  margin-top: 1rem;
+}
+
+.newsletter .button_with_chevron .responsive_icon {
+  top: 4px !important;
+}
+
+@media (min-width: 768px) {
+  .newsletter .text-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .newsletter .newsletter-img {
+    height: 11rem;
+    width: 13rem;
+    background-position: 50% 50%;
+  }
+  .newsletter .text-divier {
+    padding-left: 1rem;
+    text-align: left;
+  }
+}
+
+@media (min-width: 992px) {
+  .newsletter .text-container {
+    background-position: -12% 0%;
+    background-size: contain;
+  }
+  .newsletter .newsletter-img {
+    height: 292px;
+    width: 33rem;
   }
 }
 
