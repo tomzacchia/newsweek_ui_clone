@@ -467,7 +467,6 @@ p {
   height: auto;
 }
 
-
 .in-magazine-card__category1 {
   padding: 0 1rem;
   background-color: red;
@@ -711,7 +710,6 @@ p {
   width: 14rem;
 }
 
-
 .footer-social {
   font-size: 1.5rem;
   display: -webkit-box;
@@ -775,7 +773,8 @@ p {
   .legal-languages-row li {
     padding: 0 0.5rem;
     border-right: solid thin #a1a1a1;
-  }  
+  }
+
   .legal-languages-row ul:first-child {
     max-width: 30rem;
   }
