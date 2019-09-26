@@ -5,7 +5,7 @@
   display: none;  
 }
 
-.navbar-element a {
+.navbar-element__a {
   padding: 0 6px;
   border-right: solid thin $grey-light;
   font-weight: bold;
@@ -18,7 +18,7 @@
   }
 }
 
-.navbar-search a {
+.navbar-search__a {
   border-right: none;
 }
 
