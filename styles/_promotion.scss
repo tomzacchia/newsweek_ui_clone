@@ -1,0 +1,83 @@
+@import './colors';
+@import './mixins';
+
+.promotion-title {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 16px;
+  font-family: "Roboto Condensed", sans-serif;
+  text-transform: uppercase;
+  color: $main;
+}
+
+.subscription .content-container {
+  padding: 1rem;
+  padding-top: 18rem;
+  background-color: $grey-light-2;
+  position: relative;
+}
+
+.content-container .img1 {
+  position: absolute;
+  top: 1rem;
+  left: 21%;
+}
+
+.content-container .img2 {
+  position: absolute;
+  top: 2rem;
+  left: 45%;
+}
+
+.subscription .text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.promotion .text-container h2 {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.promotion .text-container p {
+  font-size: 15px;
+  line-height: 21px;
+}
+
+.subscription .button {
+  margin-top: 1rem;
+}
+
+@include breakpoint(md) {
+  .subscription .content-container {
+    padding: 6rem 1rem;
+    padding-left: 18rem;
+  }
+  .content-container .img1 {
+    position: absolute;
+    top: 22px;
+    left: 3%;
+  }
+  .content-container .img2 {
+    position: absolute;
+    top: 48px;
+    left: 17%;
+  }
+  .subscription .text-container {
+    padding-left: 1rem;
+    align-items: flex-start;
+  }
+  .promotion .text-container h2 {
+    text-align: left;
+  }
+  .promotion .text-container p {
+    text-align: left;
+  }
+}
