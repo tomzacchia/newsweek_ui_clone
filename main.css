@@ -511,8 +511,6 @@ p {
   color: #f72210;
 }
 
-
-
 .promotion .button_with_chevron {
   display: inline;
 }
@@ -765,15 +763,11 @@ p {
   list-style: none;
 }
 
-
-
 .languages {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-
-
 
 @media (min-width: 768px) {
   .legal-languages-row ul:first-child {
