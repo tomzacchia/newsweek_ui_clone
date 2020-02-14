@@ -1,0 +1,88 @@
+@import './colors';
+@import './mixins';
+
+.in-magazine {
+  position: relative;
+}
+
+// feature
+.in-magazine-features__link {
+  background-color: $grey-light;
+  font-weight: bold;
+}
+
+// in magazine title
+.in-magazine-title {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.in-magazine-title img {
+  width: 2rem;
+}
+
+.in-magazine-title p {
+  margin-left: 1rem;
+  font-weight: bold;
+}
+
+@include breakpoint(md) {
+  .in-magazine-title {
+    margin-bottom: 2rem;
+  }
+
+  .in-magazine-title img {
+    margin-left: 12rem;
+  }
+}
+
+// in magazine card
+.in-magazine-card  {
+  margin-bottom: 2rem;
+}
+
+.in-magazine-card img {
+  margin-bottom: 1rem;
+  width: 100%;
+  height: auto;
+}
+
+.in-magazine-card > a {
+  font-weight: bold;
+}
+
+.in-magazine-card__category1 {
+  padding: 0 1rem;
+  background-color: red;
+  color: white !important;
+  text-transform: uppercase;
+}
+
+.in-magazine-card__category2 {
+  padding: 0 1rem;
+  text-transform: uppercase;
+}
+
+.in-magazine-card__title {
+  display: block;
+}
+
+@include breakpoint(md) {
+  .in-magazine-features {
+    width: 10rem;
+    position: absolute;
+    top: 5rem;
+  }
+  .in-magazine-card__category2 {
+    padding: 0;
+  }
+}
+
+@include breakpoint(lg) {
+  .in-magazine-features {
+    width: 11rem;
+    top: 5rem;
+  }
+}

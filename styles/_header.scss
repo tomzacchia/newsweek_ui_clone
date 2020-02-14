@@ -1,0 +1,94 @@
+@import './colors';
+@import './mixins';
+
+// header
+.header {
+  height: 3rem;
+  background-color: $main;
+}
+
+.header .row {
+  height: 100%;
+  align-items: center;
+}
+
+@include breakpoint(md) {
+  .header {
+    height: 3rem;
+  }
+}
+
+@include breakpoint(lg) {
+  .header {
+    padding-bottom: 1rem;
+    height: 7rem;
+  }
+  .header .row {
+    padding-bottom: 1rem;
+    align-items: flex-end;
+  }
+}
+
+// date, img
+.header__date {
+  color: white;
+  font-weight: 100;
+}
+
+.header__img-container {
+  justify-content: flex-start;
+}
+
+.header__img {
+  height: 1.25rem;
+  width: auto;
+}
+
+@include breakpoint(md) {
+  .header__img {
+    height: 1.5rem;
+    width: auto;
+  }
+}
+
+@include breakpoint(lg) {
+  .header__img-container {
+    display: flex;
+    justify-content: center;
+  }
+  .header__img {
+    height: 3rem;
+    width: auto;
+  }
+}
+
+// sign in and buttn
+.header .header-left-content {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header .header-left-content a {
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.header .fa-bars {
+  color: #fa9a94;
+  font-size: 1.5rem;
+}
+
+.header .header-left-content .button {
+  margin: 0 12px;
+}
+
+
+
+@include breakpoint(md) {
+  .header .header-left-content .button {
+    padding-right: 1rem;
+  }
+}

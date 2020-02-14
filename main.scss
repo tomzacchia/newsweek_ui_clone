@@ -1,0 +1,27 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+p {
+  margin: 0;
+}
+
+@import './styles/colors';
+@import './styles/functional';
+@import './styles/components';
+
+@import './styles/header';
+@import './styles/navbar';
+
+.main-articles-container {
+  padding-top: 2rem;
+}
+
+@import './styles/featured';
+@import './styles/other_stories';
+@import './styles/opinion';
+@import './styles/in-magazine';
+@import './styles/promotion';
+@import './styles/footer';

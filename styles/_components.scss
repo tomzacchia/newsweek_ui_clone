@@ -1,0 +1,41 @@
+@import './colors';
+@import './mixins';
+
+// button component
+.button {
+  border: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+  display: inline;
+}
+
+.button-bg-white {
+  background-color: white;
+  color: $main;
+}
+
+.button-bg-main {
+  background-color: $main;
+  color: white;
+}
+
+// button_with_chevron
+.button_with_chevron {
+  position: relative;
+}
+
+.button_with_chevron .responsive_icon {
+  display: none;
+}
+
+@include breakpoint(md) {
+  .button_with_chevron .responsive_icon {
+    display: initial;
+    position: absolute;
+    right: 14px;
+    top: 7px;
+    color: #f7220a;
+    font-size: 12px;
+  }
+}

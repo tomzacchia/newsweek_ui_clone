@@ -1,0 +1,44 @@
+@import './colors';
+
+// opinion
+.opinion-container {
+  margin-bottom: 1rem;
+}
+
+.opinion__description {
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: bold;
+}
+
+.opinion__author {
+  font-size: 15px;
+  line-height: 20px;
+  color: $grey-dark;
+}
+
+// latest
+.latest-container {
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  display: flex;
+  border-bottom: solid thin $grey-light;
+}
+
+.latest-container:last-child {
+  border-bottom: none;
+}
+
+.latest__img {
+  width: auto;
+  height: 5rem;
+}
+
+.latest__title {
+  margin-left: 1rem;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
